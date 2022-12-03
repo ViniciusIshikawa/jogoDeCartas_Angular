@@ -1,0 +1,42 @@
+.cartas{
+  min-width: 100px;
+  width: 200px;
+  min-height: 300px;
+  margin: 10px;
+
+  background-repeat: no-repeat;
+  background-size: 140% 100%;
+  background-position: center center;
+
+  font-weight: bold;
+
+  border-style: solid;
+}
+
+p{
+  background: rgb(0, 0, 0, 0.75);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+#name{
+  font-size: large;
+}
+
+.infos{
+  padding-top: 170px;
+  text-align: center;
+}
+
+.cartas:hover{
+  transform: scale(1.04);
+  transition: 150ms linear;
+}
+
+.cartasDisponiveis{
+  flex-wrap: wrap;
+  background-image: url("../../../assets/images/fundoBaralho.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

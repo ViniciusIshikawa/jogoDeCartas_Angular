@@ -1,0 +1,63 @@
+<div class="fundo" fxLayout="column">
+  <div style="padding-top: 30px; padding-bottom: 30px;">
+    <div fxFlex="35"></div>
+    <span id="titulo">Selecione o seu herói</span>
+    <mat-card class="card" *ngIf="selecionou" style="background-image: url('../../../../assets/{{hero1.image}}');">
+      <p style="text-align: center;" id="name">
+        {{hero1.name}}
+      </p>
+      <div>
+        <p>Tipo: {{hero1.attribute}}</p>
+        <p>Ataue: {{hero1.atk}}</p>
+        <p>Defesa: {{hero1.def}}</p>
+
+      </div>
+    </mat-card>
+
+
+    <!-- <div class="fight">
+      <img id="vs" src="../../../../assets/images/vs.jpg" alt="Photo of your hero">
+      <br>
+      <button mat-raised-button color="warn">Lutar</button>
+    </div> -->
+
+    <mat-card class="card" *ngIf="selected2">
+      <p style="text-align: center;" id="name">
+        {{hero2.name}}
+      </p>
+      <div>
+          <img mat-card-image style="background-image: url('../../../../assets/{{hero2.image}}');" alt="Photo of your hero">
+      </div>
+      <div>
+        <p>Tipo: {{hero2.attribute}}</p>
+        <p>Ataque: {{hero2.atk}}</p>
+        <p>Defesa: {{hero2.def}}</p>
+      </div>
+    </mat-card>
+  </div>
+  <!-- <div>
+    <button mat-raised-button><a routerLink="/">Menu inicial</a></button>
+  </div> -->
+</div>
+
+
+
+<div>
+  <mat-card  fxLayout="row" fxLayoutAlign="space-evenly center" class="tabuleiro">
+    <mat-card *ngFor="let hero of heros let i = index" fxFlex="30" class="card" style="background-image: url('../../../../assets/{{heros[i].image}}');">
+      <div fxLayout="column">
+        <p>
+          {{heros[i].name}}
+        </p>
+        <div id="espaco"></div>
+        <div style="text-align: center;">
+          <p>Tipo: {{heros[i].attribute}}</p>
+          <p>Ataque: {{heros[i].atk}}</p>
+          <p>Defesa: {{heros[i].def}}</p>
+          <button mat-raised-button color="primary" (click)="choose(heros[i].name, i, heros[i])">Escolher</button>
+        </div>
+      </div>
+    </mat-card>
+  </mat-card>
+</div>
+

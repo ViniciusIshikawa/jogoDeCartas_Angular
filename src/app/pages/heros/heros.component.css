@@ -1,0 +1,75 @@
+#titulo {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(227, 227, 227);
+}
+
+.fundo {
+  background-image: url(../../../assets/images/wallpaper_Tela_Jogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tabuleiro {
+  flex-wrap: wrap;
+}
+
+.card{
+  background-repeat: no-repeat;
+  background-size: 140% 100%;
+  background-position: center center;
+
+  font-weight: bold;
+
+  border-style: solid;
+  transform: scale(1);
+  transition: 150ms linear;
+  margin-bottom: 20px;
+}
+
+#espaco {
+  margin-top: 200px;
+}
+
+p {
+  background: rgb(0, 0, 0, 0.75);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.card:hover{
+  transform: scale(1.04);
+  transition: 150ms linear;
+}
+
+#arena{
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#vs{
+  max-width: 100px;
+  max-height: 100px;
+  padding-top: 170px;
+}
+
+.fight{
+  display: flex;
+  flex-direction: column;
+}
+
+#position{
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  width: 500px;
+  height: 400px;
+
+  text-align: center;
+  background-color: purple;
+  align-items: center;
+  justify-content: center;
+}

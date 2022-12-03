@@ -1,0 +1,23 @@
+<!--  -->
+<mat-card  fxLayout="row" fxLayoutAlign="space-between center" class="cartasDisponiveis">
+  <mat-card class="cartas" *ngFor="let hero of heros let i = index" style="background-image: url('../../../../assets/{{heros[i].image}}');">
+    <p id="name">
+      {{heros[i].name}}
+    </p>
+
+    <div class="infos">
+      <p>
+        Tipo: {{heros[i].attribute}}
+        <br>
+        Ataque: {{heros[i].atk}}
+        <br>
+        Defesa: {{heros[i].def}}
+      </p>
+      <button mat-raised-button color="primary" (click)="addCartaAoBaralho(heros[i])">Escolher</button>
+    </div>
+  </mat-card>
+
+  <button mat-raised-button><a routerLink="/">Menu inicial</a></button>
+</mat-card>
+
+
