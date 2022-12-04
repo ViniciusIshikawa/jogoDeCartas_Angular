@@ -1,19 +1,19 @@
 <!--  -->
 <mat-card  fxLayout="row" fxLayoutAlign="space-between center" class="cartasDisponiveis">
-  <mat-card class="cartas" *ngFor="let hero of heros let i = index" style="background-image: url('../../../../assets/{{heros[i].image}}');">
+  <mat-card class="cartas" *ngFor="let hero of herois let i = index" style="background-image: url('../../../../assets/{{herois[i].imagem}}');">
     <p id="name">
-      {{heros[i].name}}
+      {{herois[i].nome}}
     </p>
 
     <div class="infos">
       <p>
-        Tipo: {{heros[i].attribute}}
+        Tipo: {{herois[i].atributo}}
         <br>
-        Ataque: {{heros[i].atk}}
+        Ataque: {{herois[i].ataque}}
         <br>
-        Defesa: {{heros[i].def}}
+        Defesa: {{herois[i].defesa}}
       </p>
-      <button mat-raised-button color="primary" (click)="addCartaAoBaralho(heros[i])">Escolher</button>
+      <button mat-raised-button color="primary" (click)="addCartaAoBaralho(herois[i])">Escolher</button>
     </div>
   </mat-card>
 

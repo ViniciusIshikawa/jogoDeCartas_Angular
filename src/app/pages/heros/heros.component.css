@@ -5,7 +5,7 @@
 }
 
 .fundo {
-  background-image: url(../../../assets/images/wallpaper_Tela_Jogo.png);
+  background-image: url(../../../assets/images/tabuleiro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-.card{
+.cartas{
   background-repeat: no-repeat;
   background-size: 140% 100%;
   background-position: center center;
@@ -25,6 +25,10 @@
   transform: scale(1);
   transition: 150ms linear;
   margin-bottom: 20px;
+}
+
+.cartasEmMaos{
+  flex-wrap: wrap;
 }
 
 #espaco {
@@ -38,7 +42,7 @@ p {
   color: white;
 }
 
-.card:hover{
+.cartas:hover{
   transform: scale(1.04);
   transition: 150ms linear;
 }

@@ -7,48 +7,48 @@ import { Hero } from 'src/app/shared/model/hero.model';
   styleUrls: ['./baralho.component.css']
 })
 export class BaralhoComponent implements OnInit {
-  heros: Hero[] = [
+  herois: Hero[] = [
     {
-      name: "Tanjiro Kamado",
-      attribute: "Água",
-      atk: 9,
-      def: 3,
-      image: 'images/tanjiro.jpg'
+      nome: "Tanjiro Kamado",
+      atributo: "Água",
+      ataque: 9,
+      defesa: 3,
+      imagem: 'images/tanjiro.jpg'
     },
     {
-      name: "Nezuko Kamado",
-      attribute: "Demônio",
-      atk: 9,
-      def: 3,
-      image: 'images/nezuko.jpg'
+      nome: "Nezuko Kamado",
+      atributo: "Demônio",
+      ataque: 9,
+      defesa: 3,
+      imagem: 'images/nezuko.jpg'
     },
     {
-      name: "Zenitsu Agatsuma",
-      attribute: "Relâmpago",
-      atk: 9,
-      def: 3,
-      image: 'images/zenitsu.jpg'
+      nome: "Zenitsu Agatsuma",
+      atributo: "Relâmpago",
+      ataque: 9,
+      defesa: 3,
+      imagem: 'images/zenitsu.jpg'
     },
     {
-      name: "Inosuke Hashibira",
-      attribute: "Besta",
-      atk: 9,
-      def: 3,
-      image: 'images/inosuke.jpg'
+      nome: "Inosuke Hashibira",
+      atributo: "Besta",
+      ataque: 9,
+      defesa: 3,
+      imagem: 'images/inosuke.jpg'
     },
     {
-      name: "Shinobu Kocho",
-      attribute: "Insetos",
-      atk: 9,
-      def: 3,
-      image: 'images/shinobu.jpg'
+      nome: "Shinobu Kocho",
+      atributo: "Insetos",
+      ataque: 9,
+      defesa: 3,
+      imagem: 'images/shinobu.jpg'
     },
     {
-      name: "Giyu Tomioka",
-      attribute: "Água",
-      atk: 9,
-      def: 3,
-      image: 'images/tomioka.jpg'
+      nome: "Giyu Tomioka",
+      atributo: "Água",
+      ataque: 9,
+      defesa: 3,
+      imagem: 'images/tomioka.jpg'
     }
   ]
 

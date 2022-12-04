@@ -1,7 +1,7 @@
 export class Hero{
-  name: string;
-  attribute: string;
-  atk: number;
-  def: number;
-  image: string;
+  nome: string;
+  atributo: string;
+  ataque: number;
+  defesa: number;
+  imagem: string;
 }
