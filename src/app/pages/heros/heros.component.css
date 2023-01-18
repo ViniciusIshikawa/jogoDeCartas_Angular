@@ -8,6 +8,7 @@
   background-image: url(../../../assets/images/tabuleiro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .tabuleiro {
@@ -24,15 +25,10 @@
   border-style: solid;
   transform: scale(1);
   transition: 150ms linear;
-  margin-bottom: 20px;
 }
 
 .cartasEmMaos{
   flex-wrap: wrap;
-}
-
-#espaco {
-  margin-top: 200px;
 }
 
 p {
@@ -63,17 +59,4 @@ p {
 .fight{
   display: flex;
   flex-direction: column;
-}
-
-#position{
-  position: absolute;
-  top: 30%;
-  left: 25%;
-  width: 500px;
-  height: 400px;
-
-  text-align: center;
-  background-color: purple;
-  align-items: center;
-  justify-content: center;
 }

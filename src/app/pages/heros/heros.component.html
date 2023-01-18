@@ -1,58 +1,34 @@
-<div class="fundo" fxLayout="column">
-  <div style="padding-top: 30px; padding-bottom: 30px;">
-    <div fxFlex="35"></div>
-    <span id="titulo">Selecione o seu herói</span>
-    <mat-card class="cartas" *ngIf="selecionou" style="background-image: url('../../../../assets/{{hero1.imagem}}');">
-      <p style="text-align: center;" id="name">
-        {{hero1.nome}}
-      </p>
-      <div>
-        <p>Tipo: {{hero1.atributo}}</p>
-        <p>Ataue: {{hero1.ataque}}</p>
-        <p>Defesa: {{hero1.defesa}}</p>
+<div class="fundo" fxLayout="row" fxFlex>
+  <div fxFlex></div>
 
+  <div fxFlex="95%" fxLayout="column">
+    <div fxFlex></div>
+
+    <div fxLayout="column" fxFlex="95%" style="border-color: red; border-style: solid;">
+      <div fxFlex="65%"></div>
+      <div fxFlex="30%" fxLayout="row" class="cartasEmMaos" style="justify-content: center;">
+        <mat-card *ngFor="let hero of herois let i = index" class="cartas" style="background-image: url('../../../../assets/{{herois[i].imagem}}');">
+          <div fxLayout="column" fxFlex>
+              <p>
+                {{herois[i].nome}}
+              </p>
+
+            <div fxFlex></div>
+
+            <div style="text-align: center;">
+              <!-- <p>Tipo: {{herois[i].atributo}}</p>
+              <p>Ataque: {{herois[i].ataque}}</p>
+              <p>Defesa: {{herois[i].defesa}}</p> -->
+              <button mat-raised-button color="primary" (click)="choose(herois[i].nome, i, herois[i])">Escolher</button>
+            </div>
+          </div>
+        </mat-card>
       </div>
-    </mat-card>
-
-
-    <!-- <div class="fight">
-      <img id="vs" src="../../../../assets/images/vs.jpg" alt="Photo of your hero">
-      <br>
-      <button mat-raised-button color="warn">Lutar</button>
-    </div> -->
-
-    <mat-card class="cartas" *ngIf="selected2">
-      <p style="text-align: center;" id="name">
-        {{hero2.nome}}
-      </p>
-      <div>
-          <img mat-card-image style="background-image: url('../../../../assets/{{hero2.imagem}}');" alt="Photo of your hero">
-      </div>
-      <div>
-        <p>Tipo: {{hero2.atributo}}</p>
-        <p>Ataque: {{hero2.ataque}}</p>
-        <p>Defesa: {{hero2.defesa}}</p>
-      </div>
-    </mat-card>
+      <div fxFlex></div>
+    </div>
+    <div fxFlex></div>
   </div>
-  <!-- <div>
-    <button mat-raised-button><a routerLink="/">Menu inicial</a></button>
-  </div> -->
-  <div class="cartasEmMaos" style="justify-content: center;">
-    <mat-card *ngFor="let hero of herois let i = index" fxFlex="25" class="cartas" style="background-image: url('../../../../assets/{{herois[i].imagem}}');">
-      <div fxLayout="column">
-        <p>
-          {{herois[i].nome}}
-        </p>
-        <div id="espaco"></div>
-        <div style="text-align: center;">
-          <p>Tipo: {{herois[i].atributo}}</p>
-          <p>Ataque: {{herois[i].ataque}}</p>
-          <p>Defesa: {{herois[i].defesa}}</p>
-          <button mat-raised-button color="primary" (click)="choose(herois[i].nome, i, herois[i])">Escolher</button>
-        </div>
-      </div>
-    </mat-card>
-  </div>
+
+  <div fxFlex></div>
 </div>
 
